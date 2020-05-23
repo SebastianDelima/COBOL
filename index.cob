@@ -21,20 +21,26 @@
         DATA DIVISION.
 
         WORKING-STORAGE SECTION.
-        01 MyName          PIC A(20) VALUE "Sebastian De Lima". 
-        01 FavoriteNumber  PIC 9 VALUE 7.
-        01 Age             PIC X(20) VALUE "24 Years old".
-        01 DateBirth.
-           02 Month PIC 9(2).
-           02 Dayy   PIC 9(2).
-           02 Year  PIC 9(4).
+       01 Humor PIC X(20).
 
         *> FOURTH DIVISION
         PROCEDURE DIVISION.
-
-        COMPUTE 1 + 2
+         
+         DISPLAY Humor
+         MOVE "HAPPY!" TO Humor
+         DISPLAY Humor
+         MOVE "ANGRY!" TO Humor
+         DISPLAY Humor
+         MOVE "SAD!" TO Humor
+         DISPLAY Humor
+         MOVE "TIRED!" TO Humor
+         DISPLAY Humor
 
         STOP RUN.
+
+
+
+
 
 
       
